@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ACP Couverture — Couvreur charpentier zingueur à Donchery (08) | Ardennes</title>
+<meta name="description" content="ACP Couverture, artisan couvreur à Donchery dans les Ardennes. Couverture, charpente, zinguerie, pose de Velux. 15 ans de métier entre Sedan et Charleville-Mézières. Garantie décennale, devis gratuit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#22293A;
+  --navy-900:#161B27;
+  --navy-700:#333D55;
+  --navy-500:#5A667F;
+  --orange:#E08B3A;
+  --orange-clair:#F0A75E;
+  --orange-fonce:#B96D24;
+  --bleu:#BFD8E0;
+  --bleu-pale:#E9F2F5;
+  --bleu-tres-pale:#F4F9FA;
+  --blanc:#FFFFFF;
+  --gris:#5D6879;
+  --ligne:#D6E1E6;
+  --serif:'Source Serif 4',Georgia,serif;
+  --sans:'Archivo',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--blanc);color:var(--navy);line-height:1.58;overflow-x:hidden}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-0.015em;line-height:1.1}
+a{color:inherit}
+img{max-width:100%;display:block}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+
+/* ---------- BARRE HAUTE ---------- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--ligne)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:14px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .mark{flex:0 0 auto;width:47px;height:43px}
+.logo .acp{font-family:var(--serif);font-weight:700;font-size:12.5px;letter-spacing:.14em;color:var(--navy-500);line-height:1}
+.logo .nom{font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:.02em;color:var(--navy);line-height:1.1;margin-top:1px}
+.nav{display:none;gap:26px;font-size:14.5px;color:var(--gris)}
+.nav a{text-decoration:none}
+.nav a:hover{color:var(--orange-fonce)}
+.tel-btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;padding:12px 17px;border-radius:3px;white-space:nowrap;transition:background .2s}
+.tel-btn:hover{background:var(--orange-fonce)}
+@media(min-width:940px){.nav{display:flex}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--navy-900);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(102deg,rgba(18,23,33,.95) 0%,rgba(18,23,33,.86) 44%,rgba(18,23,33,.42) 78%,rgba(18,23,33,.3) 100%)}
+.hero .wrap{position:relative;z-index:3;padding-top:84px;padding-bottom:76px}
+.hero .eyebrow{color:var(--bleu);display:block;margin-bottom:20px}
+.hero h1{font-size:clamp(33px,7vw,58px);max-width:16ch;color:#fff}
+.signature{display:flex;align-items:center;gap:12px;margin-top:22px}
+.signature .trait{width:34px;height:2px;background:var(--orange);flex:0 0 auto}
+.signature em{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(17px,3.4vw,21px);color:var(--orange-clair)}
+.hero p.lead{margin-top:20px;max-width:44ch;font-size:clamp(15.5px,2.3vw,17.5px);color:#D3DCE4}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn-primary,.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:600;font-size:16px;padding:16px 24px;border-radius:3px;transition:.2s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-clair)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:var(--orange-clair);color:var(--orange-clair)}
+.avis-badge{display:inline-flex;align-items:center;gap:12px;margin-top:30px;padding:12px 16px;border:1px solid rgba(255,255,255,.22);border-radius:3px;background:rgba(255,255,255,.07)}
+.avis-badge .note{font-family:var(--serif);font-weight:700;font-size:23px;color:#fff;line-height:1}
+.avis-badge .etoiles{color:var(--orange-clair);font-size:14px;letter-spacing:1px}
+.avis-badge small{display:block;font-size:12px;color:#BCC7D2;margin-top:2px}
+
+/* ---------- BANDEAU METIERS (repris de sa bache) ---------- */
+.metiers{background:var(--navy);color:#fff;border-top:2px solid var(--orange)}
+.metiers .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 26px;padding:17px 22px;text-align:center}
+.metiers span{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#DCE4EC}
+.metiers span.dec{color:var(--orange-clair)}
+.metiers .pt{color:var(--navy-500)}
+
+/* ---------- REPERES ---------- */
+.reperes{background:var(--bleu-pale)}
+.reperes .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--ligne);padding:0}
+.repere{background:var(--bleu-pale);padding:26px 22px}
+.repere .chiffre{font-family:var(--serif);font-weight:700;font-size:31px;color:var(--navy);line-height:1}
+.repere .label{font-size:13.5px;color:var(--gris);margin-top:7px}
+@media(min-width:780px){.reperes .wrap{grid-template-columns:repeat(4,1fr)}}
+
+/* ---------- URGENCE ---------- */
+.urgence{background:var(--orange)}
+.urgence .wrap{padding:20px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+.urgence p{font-size:16px;color:#fff}
+.urgence strong{font-family:var(--serif);font-weight:700}
+.urgence a{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--navy);background:#fff;padding:11px 17px;border-radius:3px;text-decoration:none;white-space:nowrap}
+
+/* ---------- SECTIONS ---------- */
+.section{padding:80px 0}
+.section-head{max-width:62ch;margin-bottom:46px}
+.section-head .eyebrow{color:var(--orange-fonce);display:block;margin-bottom:14px}
+.section-head h2{font-size:clamp(27px,5vw,42px)}
+.section-head p{margin-top:15px;color:var(--gris);font-size:17px}
+
+/* prestations */
+.grid-presta{display:grid;gap:1px;background:var(--ligne);border:1px solid var(--ligne)}
+.presta{background:#fff;padding:30px 26px}
+.presta .ico{width:26px;height:26px;margin-bottom:14px}
+.presta h3{font-size:20px;margin-bottom:10px}
+.presta p{font-size:15px;color:var(--gris)}
+@media(min-width:680px){.grid-presta{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.grid-presta{grid-template-columns:repeat(3,1fr)}}
+
+/* chantiers */
+.chantiers{background:var(--navy-900);color:#fff}
+.chantiers .section-head .eyebrow{color:var(--orange-clair)}
+.chantiers .section-head p{color:#AFBBC8}
+.grid-chantiers{display:grid;gap:24px}
+.chantier{background:var(--navy);border:1px solid rgba(255,255,255,.12);overflow:hidden;display:flex;flex-direction:column}
+.chantier .ph{aspect-ratio:4/3;overflow:hidden;background:var(--navy-700)}
+.chantier .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.chantier:hover .ph img{transform:scale(1.04)}
+.chantier-info{padding:20px 22px;flex:1}
+.chantier-info h3{font-size:18.5px;margin-bottom:14px;color:#fff}
+.fiche{list-style:none;display:grid;gap:7px}
+.fiche li{display:flex;justify-content:space-between;gap:14px;font-family:var(--mono);font-size:12.5px;padding-bottom:7px;border-bottom:1px dotted rgba(255,255,255,.2)}
+.fiche li span:first-child{color:#93A1B2}
+.fiche li span:last-child{color:#fff;text-align:right}
+@media(min-width:640px){.grid-chantiers{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.grid-chantiers{grid-template-columns:repeat(4,1fr)}}
+
+/* zone */
+.zone{background:var(--bleu-tres-pale)}
+.zone-grid{display:grid;gap:36px;align-items:start}
+.communes{display:flex;flex-wrap:wrap;gap:8px}
+.communes li{list-style:none;font-family:var(--mono);font-size:12.5px;padding:8px 13px;background:#fff;border:1px solid var(--ligne);border-radius:2px;color:var(--gris)}
+.communes li.base{background:var(--navy);color:#fff;border-color:var(--navy)}
+.carte-atelier{border:1px solid var(--ligne);background:#fff;overflow:hidden}
+.carte-atelier img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.carte-atelier .corps{padding:24px 22px}
+.carte-atelier h3{font-size:19px;margin-bottom:12px}
+.carte-atelier p{font-size:15px;color:var(--gris)}
+.carte-atelier dl{margin-top:18px;display:grid;gap:9px;font-size:14px}
+.carte-atelier dl div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dotted var(--ligne);padding-bottom:9px}
+.carte-atelier dt{color:var(--gris)}
+.carte-atelier dd{font-family:var(--mono);font-size:12.5px;text-align:right}
+@media(min-width:880px){.zone-grid{grid-template-columns:1.2fr .9fr;gap:52px}}
+
+/* avis */
+.avis-section{background:var(--bleu-pale)}
+.grid-avis{display:grid;gap:20px}
+.avis{background:#fff;padding:26px 24px;border:1px solid var(--ligne);border-top:3px solid var(--orange)}
+.avis .etoiles{color:var(--orange);font-size:14px;letter-spacing:2px}
+.avis p{margin:13px 0 18px;font-size:15.5px}
+.avis footer{font-family:var(--mono);font-size:11.5px;color:var(--gris);letter-spacing:.04em}
+@media(min-width:780px){.grid-avis{grid-template-columns:repeat(3,1fr)}}
+
+/* devis */
+.devis{background:var(--navy);color:#fff}
+.devis-grid{display:grid;gap:40px}
+.devis h2{font-size:clamp(27px,5vw,42px)}
+.devis .eyebrow{color:var(--orange-clair);display:block;margin-bottom:14px}
+.devis .lead{color:#C4CEDA;margin-top:16px;font-size:17px;max-width:42ch}
+.contact-direct{margin-top:30px;display:grid;gap:13px}
+.contact-direct a{display:flex;align-items:center;gap:13px;text-decoration:none;border:1px solid rgba(255,255,255,.22);padding:15px 17px;border-radius:3px;transition:.2s}
+.contact-direct a:hover{border-color:var(--orange-clair);background:rgba(224,139,58,.12)}
+.contact-direct .k{font-family:var(--mono);font-size:10.5px;color:#93A1B2;letter-spacing:.11em;display:block}
+.contact-direct .v{font-size:16.5px;font-weight:600;color:#fff}
+form{background:var(--navy-900);padding:28px 24px;border:1px solid rgba(255,255,255,.14)}
+.champ{margin-bottom:17px}
+.champ label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:#93A1B2;margin-bottom:7px}
+.champ input,.champ select,.champ textarea{width:100%;background:var(--navy);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--sans);font-size:15.5px;padding:13px 14px;border-radius:3px}
+.champ input:focus,.champ select:focus,.champ textarea:focus{outline:2px solid var(--orange);outline-offset:1px;border-color:transparent}
+.champ textarea{min-height:96px;resize:vertical}
+.deux{display:grid;gap:17px}
+@media(min-width:520px){.deux{grid-template-columns:1fr 1fr}}
+.depot{border:1px dashed rgba(255,255,255,.32);padding:17px;text-align:center;border-radius:3px;color:#93A1B2;font-size:13.5px;margin-bottom:19px}
+.depot b{display:block;color:#fff;font-size:14.5px;margin-bottom:4px;font-weight:600}
+button[type=submit]{width:100%;background:var(--orange);color:#fff;border:0;font-family:var(--sans);font-weight:600;font-size:16.5px;padding:17px;border-radius:3px;cursor:pointer;transition:background .2s}
+button[type=submit]:hover{background:var(--orange-clair)}
+.rgpd{font-size:12px;color:#93A1B2;margin-top:13px;text-align:center;line-height:1.5}
+.confirme{display:none;background:rgba(224,139,58,.16);border:1px solid var(--orange);padding:19px;border-radius:3px;color:var(--orange-clair);font-size:15px;margin-top:17px}
+@media(min-width:920px){.devis-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}}
+
+/* footer */
+footer.pied{background:var(--navy-900);color:#93A1B2;padding:52px 0 30px}
+.pied-grid{display:grid;gap:32px;margin-bottom:34px}
+.pied-grid h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--orange-clair);margin-bottom:13px}
+.pied-grid p,.pied-grid li{font-size:14.5px;line-height:1.85;list-style:none}
+.pied-grid a{text-decoration:none}
+.pied-grid a:hover{color:var(--orange-clair)}
+.pied-bas{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+
+/* barre mobile */
+.barre-mobile{position:fixed;bottom:0;left:0;right:0;z-index:70;display:flex;background:var(--navy-900);border-top:1px solid rgba(255,255,255,.16);padding:9px 10px calc(9px + env(safe-area-inset-bottom));gap:9px}
+.barre-mobile a{flex:1;text-align:center;text-decoration:none;font-weight:600;font-size:15px;padding:14px 8px;border-radius:3px}
+.barre-mobile .appel{background:var(--orange);color:#fff}
+.barre-mobile .form{border:1px solid rgba(255,255,255,.3);color:#fff}
+@media(min-width:940px){.barre-mobile{display:none}}
+body{padding-bottom:78px}
+@media(min-width:940px){body{padding-bottom:0}}
+
+/* bandeau demo */
+.demo-kraon{position:fixed;z-index:80;right:12px;bottom:88px;background:#0B0B0B;color:#fff;border:1px solid #333;border-radius:4px;padding:12px 14px;max-width:252px;font-size:12px;line-height:1.5;box-shadow:0 8px 26px rgba(0,0,0,.34)}
+.demo-kraon b{display:block;font-family:var(--sans);font-weight:700;letter-spacing:.05em;font-size:12.5px;margin-bottom:5px}
+.demo-kraon span{color:#9A9A9A}
+.demo-kraon button{background:none;border:0;color:#666;position:absolute;top:5px;right:8px;cursor:pointer;font-size:15px;line-height:1}
+@media(min-width:940px){.demo-kraon{bottom:16px}}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="coche" viewBox="0 0 24 24">
+    <path d="M3 13.5 L9 20 L21 4.5" fill="none" stroke="#E08B3A" stroke-width="4.4" stroke-linecap="butt" stroke-linejoin="miter"/>
+  </symbol>
+</defs></svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="#" class="logo" aria-label="ACP Couverture, accueil">
+      <svg class="mark" viewBox="0 0 100 92" role="img" aria-label="Logo ACP Couverture">
+        <path d="M36.8 69.4 L51.7 84.7 L94.6 43" fill="none" stroke="#E08B3A" stroke-width="9.9" stroke-linecap="butt" stroke-linejoin="miter"/>
+        <rect x="13.2" y="13.6" width="10.8" height="19.5" fill="#22293A"/>
+        <path d="M4.5 50 L46.7 6.6 L69.2 24" fill="none" stroke="#22293A" stroke-width="9.9" stroke-linecap="butt" stroke-linejoin="miter"/>
+        <rect x="37.6" y="33.1" width="12" height="11.6" rx="1.5" fill="#22293A"/>
+        <rect x="51.7" y="33.1" width="12" height="11.6" rx="1.5" fill="#22293A"/>
+        <rect x="37.6" y="47.2" width="12" height="11.6" rx="1.5" fill="#22293A"/>
+        <rect x="51.7" y="47.2" width="12" height="11.6" rx="1.5" fill="#22293A"/>
+      </svg>
+      <span>
+        <span class="acp">ACP</span>
+        <span class="nom">COUVERTURE</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#prestations">Prestations</a>
+      <a href="#chantiers">Chantiers</a>
+      <a href="#zone">Zone d'intervention</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <a class="tel-btn" href="tel:+33683582023">06 83 58 20 23</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="hero-img" src="photos/hero-maison-pierre.jpg" alt="Toiture neuve réalisée par ACP Couverture sur une maison en pierre dans les Ardennes">
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <span class="eyebrow">Artisan couvreur · Donchery (08)</span>
+    <h1>Couverture, charpente et zinguerie dans les Ardennes</h1>
+    <div class="signature"><span class="trait"></span><em>L'Artisan qu'il vous faut.</em></div>
+    <p class="lead">15 ans de métier entre Sedan et Charleville-Mézières. Du pavillon au bâti ancien, en ardoise comme en tuile. Garantie décennale.</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="tel:+33683582023">Appeler le 06 83 58 20 23</a>
+      <a class="btn-ghost" href="#devis">Demander un devis</a>
+    </div>
+    <div class="avis-badge">
+      <div class="note">4,9<span style="font-size:14px;color:#BCC7D2">/5</span></div>
+      <div>
+        <div class="etoiles">★★★★★</div>
+        <small>42 avis clients sur Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="metiers">
+  <div class="wrap">
+    <span>Couverture</span><span class="pt">·</span>
+    <span>Charpente</span><span class="pt">·</span>
+    <span>Zinguerie</span><span class="pt">·</span>
+    <span>Pose de Velux</span><span class="pt">·</span>
+    <span class="dec">Garantie décennale</span>
+  </div>
+</div>
+
+<section class="reperes">
+  <div class="wrap">
+    <div class="repere"><div class="chiffre">15 ans</div><div class="label">de métier sur les toits ardennais</div></div>
+    <div class="repere"><div class="chiffre">4,9/5</div><div class="label">sur 42 avis Google</div></div>
+    <div class="repere"><div class="chiffre">Décennale</div><div class="label">tous les travaux sont couverts</div></div>
+    <div class="repere"><div class="chiffre">Gratuit</div><div class="label">déplacement et devis</div></div>
+  </div>
+</section>
+
+<div class="urgence">
+  <div class="wrap">
+    <p><strong>Fuite, tuile envolée, gouttière arrachée&nbsp;?</strong> On passe constater avant que l'eau ne fasse des dégâts.</p>
+    <a href="tel:+33683582023">Appeler maintenant →</a>
+  </div>
+</div>
+
+<section class="section" id="prestations">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Prestations</span>
+      <h2>De la charpente à la gouttière</h2>
+      <p>Une entreprise de couverture, pas un intermédiaire. Le chantier est tenu du premier relevé jusqu'au nettoyage final.</p>
+    </div>
+    <div class="grid-presta">
+      <article class="presta">
+        <svg class="ico"><use href="#coche"/></svg>
+        <h3>Couverture</h3>
+        <p>Ardoise naturelle, tuile terre cuite, tuile béton. Réfection complète, reprise partielle ou réparation ponctuelle après tempête.</p>
+      </article>
+      <article class="presta">
+        <svg class="ico"><use href="#coche"/></svg>
+        <h3>Charpente</h3>
+        <p>Création, reprise et renforcement. Traitement du bois, remplacement des pièces attaquées, pose de l'écran sous-toiture.</p>
+      </article>
+      <article class="presta">
+        <svg class="ico"><use href="#coche"/></svg>
+        <h3>Zinguerie</h3>
+        <p>Gouttières, descentes, chéneaux, noues, solins, habillage de rives et de souches. Travail du zinc et du cuivre.</p>
+      </article>
+      <article class="presta">
+        <svg class="ico"><use href="#coche"/></svg>
+        <h3>Pose de Velux</h3>
+        <p>Fenêtres de toit, châssis et verrières. Pose ou remplacement, avec reprise complète de l'étanchéité autour du cadre.</p>
+      </article>
+      <article class="presta">
+        <svg class="ico"><use href="#coche"/></svg>
+        <h3>Entretien et démoussage</h3>
+        <p>Nettoyage de couverture, traitement, remplacement des éléments cassés, contrôle des points d'infiltration avant l'hiver.</p>
+      </article>
+      <article class="presta">
+        <svg class="ico"><use href="#coche"/></svg>
+        <h3>Bâti ancien et monuments</h3>
+        <p>Reprise à l'identique sur corps de ferme, bâtiment classé et secteur protégé. Matériaux et gestes d'origine.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section chantiers" id="chantiers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Chantiers récents</span>
+      <h2>Ce qui a été fait, et comment</h2>
+      <p>Chaque chantier avec sa fiche&nbsp;: matériau, commune, durée. Vous voyez le travail avant de décrocher le téléphone.</p>
+    </div>
+    <div class="grid-chantiers">
+      <article class="chantier">
+        <div class="ph"><img src="photos/chantier-tuile.jpg" alt="Couverture neuve en tuile terre cuite sur une dépendance, Ardennes" loading="lazy"></div>
+        <div class="chantier-info">
+          <h3>Couverture neuve en tuile</h3>
+          <ul class="fiche">
+            <li><span>Ouvrage</span><span>Dépendance</span></li>
+            <li><span>Matériau</span><span>Tuile terre cuite</span></li>
+            <li><span>Détail</span><span>Rive et bardage bois</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="chantier">
+        <div class="ph"><img src="photos/chantier-rive-pierre.jpg" alt="Reprise de rive et d'égout sur un bâtiment ancien en pierre" loading="lazy"></div>
+        <div class="chantier-info">
+          <h3>Rive et égout, bâti ancien</h3>
+          <ul class="fiche">
+            <li><span>Ouvrage</span><span>Maison en pierre</span></li>
+            <li><span>Matériau</span><span>Tuile plate noire</span></li>
+            <li><span>Détail</span><span>Reprise de souche</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="chantier">
+        <div class="ph"><img src="photos/chantier-toiture-ancienne.jpg" alt="Grande toiture ancienne en ardoise avant démoussage" loading="lazy"></div>
+        <div class="chantier-info">
+          <h3>Grande toiture ancienne</h3>
+          <ul class="fiche">
+            <li><span>Ouvrage</span><span>Bâtiment de caractère</span></li>
+            <li><span>Matériau</span><span>Ardoise</span></li>
+            <li><span>Détail</span><span>Démoussage, reprise</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="chantier">
+        <div class="ph"><img src="photos/chantier-pavillon.jpg" alt="Pavillon avec toiture refaite, camionnette ACP Couverture devant" loading="lazy"></div>
+        <div class="chantier-info">
+          <h3>Réfection complète, pavillon</h3>
+          <ul class="fiche">
+            <li><span>Ouvrage</span><span>Maison individuelle</span></li>
+            <li><span>Matériau</span><span>Tuile béton</span></li>
+            <li><span>Détail</span><span>Faîtage et gouttières</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section zone" id="zone">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Zone d'intervention</span>
+      <h2>Basé à Donchery, sur les toits du Sedanais</h2>
+      <p>Une entreprise locale&nbsp;: l'atelier est rue des Tournelles, et les chantiers sont à moins de trente minutes.</p>
+    </div>
+    <div class="zone-grid">
+      <div>
+        <ul class="communes">
+          <li class="base">Donchery</li>
+          <li>Sedan</li><li>Floing</li><li>Bazeilles</li><li>Glaire</li><li>Balan</li>
+          <li>Vrigne-aux-Bois</li><li>Vivier-au-Court</li><li>Charleville-Mézières</li>
+          <li>Nouzonville</li><li>Villers-sur-Bar</li><li>Chéhéry</li><li>Wadelincourt</li>
+          <li>Saint-Menges</li><li>Illy</li><li>Pont-à-Bar</li>
+        </ul>
+        <p style="margin-top:20px;color:var(--gris);font-size:15px">Votre commune n'est pas dans la liste&nbsp;? Appelez quand même, on regarde.</p>
+      </div>
+      <aside class="carte-atelier">
+        <img src="photos/bache-chantier.jpg" alt="Bâche ACP Couverture installée sur un chantier en cours" loading="lazy">
+        <div class="corps">
+          <h3>L'entreprise en clair</h3>
+          <p>Une entreprise de couverture sérieuse, sur tous types de toitures et de matériaux&nbsp;: rénovation en centre-ville comme en milieu rural, constructions neuves et bâtiments anciens.</p>
+          <dl>
+            <div><dt>Atelier</dt><dd>7 rue des Tournelles<br>08350 Donchery</dd></div>
+            <div><dt>Du lundi au vendredi</dt><dd>8 h – 18 h</dd></div>
+            <div><dt>Samedi</dt><dd>9 h – 13 h</dd></div>
+            <div><dt>Assurance</dt><dd>Garantie décennale</dd></div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section avis-section" id="avis">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Avis clients</span>
+      <h2>4,9 sur 5, sur 42 avis</h2>
+      <p>Les avis publiés sur la fiche Google de l'entreprise, remontés directement sur le site.</p>
+    </div>
+    <div class="grid-avis">
+      <article class="avis">
+        <div class="etoiles">★★★★★</div>
+        <p>Gouttières remplacées et toiture nettoyée. Du travail soigné et bien propre, je recommande.</p>
+        <footer>Avis Google · Donchery</footer>
+      </article>
+      <article class="avis">
+        <div class="etoiles">★★★★★</div>
+        <p>Artisan réactif et ponctuel. Il prend le temps d'expliquer ce qu'il fait et de conseiller, ça met en confiance. Le résultat est impeccable.</p>
+        <footer>Avis Google · Sedan</footer>
+      </article>
+      <article class="avis">
+        <div class="etoiles">★★★★★</div>
+        <p>Contacté pour un changement de descente. Très aimable, très réactif, et un travail de qualité. Je le préfère aux grosses boîtes hors de prix.</p>
+        <footer>Avis Google · Floing</footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section devis" id="devis">
+  <div class="wrap">
+    <div class="devis-grid">
+      <div>
+        <span class="eyebrow">Devis gratuit</span>
+        <h2>Dites-nous ce qui se passe sur votre toit</h2>
+        <p class="lead">Une photo prise depuis le jardin suffit souvent à comprendre le problème. On rappelle sous 24 h ouvrées.</p>
+        <div class="contact-direct">
+          <a href="tel:+33683582023"><div><span class="k">TÉLÉPHONE</span><span class="v">06 83 58 20 23</span></div></a>
+          <a href="mailto:morgan.peltriauxacp@gmail.com"><div><span class="k">E-MAIL</span><span class="v">morgan.peltriauxacp@gmail.com</span></div></a>
+          <a href="#zone"><div><span class="k">ATELIER</span><span class="v">7 rue des Tournelles, Donchery</span></div></a>
+        </div>
+      </div>
+      <form id="form-devis" novalidate>
+        <div class="deux">
+          <div class="champ"><label for="nom">Nom</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
+          <div class="champ"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="deux">
+          <div class="champ"><label for="commune">Commune</label><input id="commune" name="commune" type="text" required></div>
+          <div class="champ"><label for="type">Type de travaux</label>
+            <select id="type" name="type">
+              <option>Réfection de toiture</option>
+              <option>Réparation / fuite</option>
+              <option>Charpente</option>
+              <option>Gouttières, zinguerie</option>
+              <option>Pose de Velux</option>
+              <option>Démoussage, entretien</option>
+              <option>Construction neuve</option>
+              <option>Je ne sais pas encore</option>
+            </select>
+          </div>
+        </div>
+        <div class="champ"><label for="msg">Ce que vous constatez</label>
+          <textarea id="msg" name="msg" placeholder="Ex. : traces d'humidité au plafond de la chambre depuis les dernières pluies, maison de 1970, toiture en tuile."></textarea>
+        </div>
+        <div class="depot"><b>Ajouter des photos du toit</b>Jusqu'à 4 photos — ça permet souvent de chiffrer sans se déplacer deux fois.</div>
+        <button type="submit">Envoyer ma demande de devis</button>
+        <p class="rgpd">Vos coordonnées servent uniquement à vous rappeler pour ce projet. Elles ne sont ni revendues, ni utilisées pour autre chose.</p>
+        <div class="confirme" id="confirme">Demande envoyée. Vous serez rappelé sous 24 h ouvrées au numéro indiqué.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied-grid">
+      <div>
+        <h4>ACP Couverture</h4>
+        <p>L'Artisan Couvreur Peltriaux<br>7 rue des Tournelles<br>08350 Donchery</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33683582023">06 83 58 20 23</a></li>
+          <li><a href="mailto:morgan.peltriauxacp@gmail.com">morgan.peltriauxacp@gmail.com</a></li>
+          <li>Lun–ven 8 h–18 h · Sam 9 h–13 h</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="#prestations">Couverture</a></li>
+          <li><a href="#prestations">Charpente</a></li>
+          <li><a href="#prestations">Zinguerie</a></li>
+          <li><a href="#prestations">Pose de Velux</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <span>© 2026 ACP Couverture — Donchery, Ardennes</span>
+      <span>SIRET · Garantie décennale · Mentions légales</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="barre-mobile">
+  <a class="appel" href="tel:+33683582023">Appeler</a>
+  <a class="form" href="#devis">Devis gratuit</a>
+</nav>
+
+<aside class="demo-kraon" id="demo-kraon">
+  <button aria-label="Fermer" onclick="document.getElementById('demo-kraon').remove()">×</button>
+  <b>DÉMO KRAON</b>
+  <span>Maquette réalisée avec le logo, les photos et les informations publiés par l'entreprise. Avis reformulés, à remplacer par les originaux.</span>
+</aside>
+
+<script>
+document.getElementById('form-devis').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('confirme').style.display='block';
+  this.querySelector('button[type=submit]').textContent='Demande envoyée ✓';
+});
+</script>
+</body>
+</html>
